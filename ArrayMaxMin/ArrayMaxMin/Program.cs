@@ -20,26 +20,33 @@ namespace ArrayMaxMin
       static void FindMax(int[] a)
         {
             // display array elements
-            int max = Int32.MinValue;
+          
             for (int i = 0; i <a.Length; i++)
 
             {
-                if (a[i] > max)
-                {
-                    max = a[i];
+                    Console.WriteLine("Array element" +a[i]);
 
-                    Console.WriteLine("Array element" + max);
-
-                }
+                
             }
+        }
+        static void ConvertTemp(string convert, float tempetarute)
+        {
+
         }
 
        public static void Main(string[] args)
         {
             //New array to create....
             int[] arr = { 1, 43, 56, 33, 56, 78 };
+          int[] array2 = {-9, -7, -11, -7, -88, -5, -10};
+            int maxValue = arr.Max();
+            int maxValue1 = arr.Max();
             //calling  the method
             FindMax(arr);
+            Console.WriteLine("this is array 2:................");
+            FindMax(array2);
+            Console.WriteLine("the max value of array one is:  "+ maxValue + "the max value of array two is:  " + maxValue1 );
+            
 
             Console.ReadLine();
 
